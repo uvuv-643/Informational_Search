@@ -1,0 +1,6 @@
+ir-datasets
+pytrec-eval
+torch
+transformers
+omegaconf
+tqdm

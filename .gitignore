@@ -7,3 +7,5 @@
 **/*.tsv
 **/*.pt
 **/venv
+**/*.gz
+plans

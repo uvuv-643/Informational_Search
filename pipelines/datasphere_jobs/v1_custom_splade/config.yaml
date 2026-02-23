@@ -1,0 +1,37 @@
+# DataSphere Jobs config for Custom SPLADE v1 re-ranking benchmark
+
+name: splade-v1-custom-reranking
+desc: >
+  Custom SPLADE (distilbert-base-uncased) re-ranking on MS MARCO dev.
+  BM25 top-1000 → custom SPLADE re-rank → MRR@10, Recall@K.
+
+cmd: >
+  python main.py \
+    --collection ${COLLECTION} \
+    --model ${MODEL_WEIGHTS} \
+    --max-queries 2432 \
+    --batch-size 32 \
+    --output ${OUTPUT_METRICS}
+
+# Input files
+inputs:
+  - collection.tar.gz:
+      var: COLLECTION
+  - model.pt:
+      var: MODEL_WEIGHTS
+
+# Output files
+outputs:
+  - metrics.json: OUTPUT_METRICS
+
+# Environment
+env:
+  python:
+    type: manual
+    version: "3.10"
+    requirements-file: requirements.txt
+
+# GPU instances
+cloud-instance-types:
+  - g2.1
+  - g1.1

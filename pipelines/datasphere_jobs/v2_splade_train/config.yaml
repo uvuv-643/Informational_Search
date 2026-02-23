@@ -1,0 +1,46 @@
+# DataSphere Jobs config for SPLADEv2 Training
+# See: https://yandex.cloud/en/docs/datasphere/concepts/jobs
+
+name: splade-v2-training
+desc: >
+  SPLADEv2 training on MS MARCO passage triples (full corpus, ~39.8M triplets).
+  Produces model.pt checkpoint for re-ranking evaluation.
+  Training log in JSONL format for debugging.
+
+cmd: >
+  python main.py \
+    --data ${INPUT_DATA} \
+    --output ${OUTPUT_MODEL} \
+    --log ${OUTPUT_LOG} \
+    --checkpoint-dir ${OUTPUT_CHECKPOINTS} \
+    --max-samples 0 \
+    --epochs 1 \
+    --batch-size 32 \
+    --grad-accum 4 \
+    --lr 2e-5 \
+    --warmup-steps 6000 \
+    --num-checkpoints 5 \
+    --fp16
+
+# Input files: pre-packaged triplets (run prepare_data.py first)
+inputs:
+  - triplets.jsonl.gz:
+      var: INPUT_DATA
+
+# Output files
+outputs:
+  - model.pt: OUTPUT_MODEL
+  - training_log.jsonl: OUTPUT_LOG
+  - checkpoints: OUTPUT_CHECKPOINTS
+
+# Environment
+env:
+  python:
+    type: manual
+    version: "3.10"
+    requirements-file: requirements.txt
+
+# GPU instances (training requires GPU)
+cloud-instance-types:
+  - g2.1   # 1x A100 (preferred — faster training)
+  - g1.1   # 1x V100 (fallback)

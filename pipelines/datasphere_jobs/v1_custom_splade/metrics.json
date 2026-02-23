@@ -1,0 +1,319 @@
+{
+  "bm25": {
+    "recall_10": 0.0,
+    "recall_100": 0.0,
+    "recall_1000": 0.711111111111111,
+    "recip_rank": 0.0043100103757305825
+  },
+  "splade_v1": {
+    "recall_10": 0.2,
+    "recall_100": 0.4444444444444444,
+    "recall_1000": 0.7111111111111111,
+    "recip_rank": 0.12841192025765982,
+    "mrr@10": 0.11666666666666667
+  },
+  "delta": {
+    "recall_10": 0.2,
+    "recall_100": 0.444444,
+    "recall_1000": 0.0,
+    "recip_rank": 0.124102
+  },
+  "config": {
+    "model_name": "custom_splade_v1 (distilbert-base-uncased)",
+    "model_file": "model.pt",
+    "max_queries": 15,
+    "batch_size": 32,
+    "top_k_bm25": 1000,
+    "queries_processed": 15,
+    "doc_cache_size": 14978
+  },
+  "queries": [
+    {
+      "query_idx": 1,
+      "qid": "1019649",
+      "query": "what study for mets to brain",
+      "model_answer": {
+        "doc_id": "7383042",
+        "score": 3.014,
+        "text": "Scientists who study the brain, called neuroscientists, are doing experiments every day to try to solve these and other mysteries of the brain. 1  Your brain contains approximately 100 billion neurons. 2  If you could line up all the neurons in your body end to end, they would stretch almost 600 mil"
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7234626"
+        ],
+        "text": "We performed a control-matched cohort study of patients with brain metastases to determine whether the administration of therapeutic enoxaparin is associated with an increased risk for hemorrhage. Methods"
+      },
+      "relevant_rank": 310,
+      "reciprocal_rank": 0.003226,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 2,
+      "qid": "1082792",
+      "query": "what does the golgi apparatus do to the proteins and lipids once they arrive ?",
+      "model_answer": {
+        "doc_id": "7142996",
+        "score": 9.5404,
+        "text": "* As mentioned, one of the main functions of the Golgi apparatus is to transport such molecules as proteins and lipids. However, this is only possible when these molecules are properly modified/processed."
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "4879323"
+        ],
+        "text": "The Golgi apparatus is responsible for transporting, modifying, and packaging proteins and lipids into vesicles for delivery to targeted destinations. It is located in the cytoplasm next to the endoplasmic reticulum and near the cell nucleus. While many types of cells contain only one or several Gol"
+      },
+      "relevant_rank": 82,
+      "reciprocal_rank": 0.012195,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 3,
+      "qid": "1084910",
+      "query": "what disease do roof rats cause",
+      "model_answer": {
+        "doc_id": "7123877",
+        "score": 9.9989,
+        "text": "Common diseases spread by roof rats include  plague, typhus, rat-bite fever, jaundice, trichinosis, and salmonellosis. Effective roof rat control starts with good housekeeping and proper sanitation, which are designed to eliminate the sources of food and shelter that attract the pests in the first p"
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7123877"
+        ],
+        "text": "Common diseases spread by roof rats include  plague, typhus, rat-bite fever, jaundice, trichinosis, and salmonellosis. Effective roof rat control starts with good housekeeping and proper sanitation, which are designed to eliminate the sources of food and shelter that attract the pests in the first p"
+      },
+      "relevant_rank": 1,
+      "reciprocal_rank": 1.0,
+      "is_top1_hit": true
+    },
+    {
+      "query_idx": 4,
+      "qid": "1099065",
+      "query": "how far deep to plant beet early wonder",
+      "model_answer": {
+        "doc_id": "1254811",
+        "score": 7.8349,
+        "text": "Direct seeding in the garden is the easiest way to grow beets. They can be grown in most types of soil but prefer that it be deep, well-drained, and includes plenty of organic material, such as compost or aged manure. Too much nitrogen will cause beets to produce lots of greens but little roots. Soa"
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7290134"
+        ],
+        "text": "These beets are ready to be harvested! 1  Beet seeds have a tough seed coat that can lead to long germination times. To help speed the time it takes your beets to sprout, soak the beet seeds overnight in dechlorinated water. 2  Plant beet seeds a half inch deep and spaced 2-3 inches apart. In contai"
+      },
+      "relevant_rank": 28,
+      "reciprocal_rank": 0.035714,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 5,
+      "qid": "837202",
+      "query": "what is the nutritional value of oatmeal",
+      "model_answer": {
+        "doc_id": "4940162",
+        "score": 7.1477,
+        "text": "Nutritional Value of Oatmeal. Oats (100 g) contains energy (380 calories), protein (13 g), fat (6.5 g), carbohydrate (67 g), dietary fiber (10 g) and low content of sugar (1 g). There are many minerals and vitamins found in oats."
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7795218"
+        ],
+        "text": "Because oatmeal is a whole grain, it contains complex carbohydrates, such as dietary fiber. You'll get 28 grams of total carbohydrate from plain oatmeal, 4 of which come from dietary fiber. Your body relies on fiber to help maintain proper digestion."
+      },
+      "relevant_rank": 125,
+      "reciprocal_rank": 0.008,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 6,
+      "qid": "345453",
+      "query": "how to become a teacher assistant",
+      "model_answer": {
+        "doc_id": "6876234",
+        "score": 8.6115,
+        "text": "The qualifications you need to be a teaching assistant vary as much as the roles you play in the classroom. In all grade levels, teaching assistants monitor, administer, reinforce and instruct according to the needs of the school, teacher or supervisor."
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7720210"
+        ],
+        "text": "There are several educational paths to become a teacher aide. First, you'll need a high school diploma or general education equivalent. Then, you'll need to obtain educational experience such as a college degree or an educational certificate program that allows you to teach. A college degree is pref"
+      },
+      "relevant_rank": null,
+      "reciprocal_rank": 0.0,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 7,
+      "qid": "188714",
+      "query": "foods and supplements to lower blood sugar",
+      "model_answer": {
+        "doc_id": "8267410",
+        "score": 9.8272,
+        "text": "Fresh fruits and vegetables are preferable to dried fruit or juices, as they are lower in GI and higher in nutrients and water. Fruits are also natural, healthier alternatives to sugary desserts and snack foods, which can elevate blood sugar."
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "8003843",
+          "4321745",
+          "8003849"
+        ],
+        "text": "Cinnamon a powerful anti-inflammatory and antioxidant, and helps lower blood sugar levels and improve insulinâs ability to respond to glucose in the blood. Sprinkle it on oatmeal, have it in tea form, sprinkle it on fruit! Prickly Pear/ Nopal: is one of the lowest foods on the glycemic index. Seve"
+      },
+      "relevant_rank": 34,
+      "reciprocal_rank": 0.029412,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 8,
+      "qid": "542431",
+      "query": "ways to stop diarrhea in my pupply",
+      "model_answer": {
+        "doc_id": "3284933",
+        "score": 8.2699,
+        "text": "4 Natural Remedies For Dog Diarrhea. 1. Fasting: An Important First Step. Most animals will fast themselves when they have digestive disease and itâs a good idea to stop feeding your dog if he doesnât fast himself. You can start with 6 to 12 hours of no food or water with most dogs."
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7578032"
+        ],
+        "text": "1 Metronidazole, which is an antibiotic treatment, suitable if the diarrhea is caused by an infection. 2  Kaolin or pectin is a medication that can be administered if the dog has ingested garbage or a toxic ingredient. 3  Kaolin will absorb the toxins and relieve diarrhea but an overdose of kaolin c"
+      },
+      "relevant_rank": null,
+      "reciprocal_rank": 0.0,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 9,
+      "qid": "130825",
+      "query": "definition for daring",
+      "model_answer": {
+        "doc_id": "187333",
+        "score": 5.4495,
+        "text": "What does daring mean? Daring can mean: Courageous, and/or foolhardy bold behaviour. It also can mean: A 14 foot 3 inch sailing dinghy (A sailing dinghy is the activity of sailing small boats b â¦ y using the five essential controls.)"
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7612920"
+        ],
+        "text": "Use daring in a sentence. LINK / CITE ADD TO WORD LIST. adjective. The definition of daring is brave, risk-taking, willingness to take risks, or to be bold. 1  An example of someone daring is a stunt car driver.2  An example of something daring is a memo to your boss that asks for big changes.se dar"
+      },
+      "relevant_rank": 2,
+      "reciprocal_rank": 0.5,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 10,
+      "qid": "660957",
+      "query": "what foods are good if you have gout?",
+      "model_answer": {
+        "doc_id": "2960378",
+        "score": 11.5704,
+        "text": "According to the American Medical Association, a balanced diet for people with gout. include foods: â¢ High in complex carbohydrates (whole grains, fruits, vegetables) â¢ Low in protein (15% of calories and sources should be fish (but not seafood), tofu, lean."
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7600706"
+        ],
+        "text": "Quick Answer. The best foods for people suffering from gout include fresh fruit, whole grains, fresh and steamed vegetables, and lean protein sources. Chicken and fish are the best animal protein sources for gout patients, according to Mayo Clinic. Keep Learning."
+      },
+      "relevant_rank": 111,
+      "reciprocal_rank": 0.009009,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 11,
+      "qid": "408149",
+      "query": "is dhgate a scam",
+      "model_answer": {
+        "doc_id": "7432504",
+        "score": 4.083,
+        "text": "Is DHgate.com a scam? Ok i dont really care if the stuff are fake or like a rip off i just want to know if they actually ship the stuff to you or if they steal your money thanks. And if you actually ordered from it that'd be good thanks."
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7432503"
+        ],
+        "text": "The DHGate Scam Revealedâ¦. It is rare that an internet scam like the DHGate scam stays under the radar for such a long period of time. Usually internet scams are reported on forums, to trading standards and all other places 10 minutes after they happen."
+      },
+      "relevant_rank": 14,
+      "reciprocal_rank": 0.071429,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 12,
+      "qid": "959083",
+      "query": "when was niagara falls created",
+      "model_answer": {
+        "doc_id": "5394341",
+        "score": 6.0841,
+        "text": "The City of Niagara Falls was incorporated on March 17, 1892 from the villages of Manchester and Suspension Bridge, which were parts of the Town of Niagara. New York State Governor Roswell P. Flower signed a bill into law forming the city."
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7753774"
+        ],
+        "text": "Niagara Falls were formed when glaciers receded at the end of the Wisconsin glaciation (the last ice age), and water from the newly formed Great Lakes carved a path through the Niagara Escarpment en route to the Atlantic Ocean. While not exceptionally high, the Niagara Falls are very wide."
+      },
+      "relevant_rank": 4,
+      "reciprocal_rank": 0.25,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 13,
+      "qid": "199776",
+      "query": "health benefits of eating vegetarian",
+      "model_answer": {
+        "doc_id": "1386136",
+        "score": 9.5365,
+        "text": "It's a great idea to plan consciously when switching over to a vegetarian diet. Not eating meat can offer many health benefits, as well as addressing environmental and ethical concerns you may have regarding eating animals. However, before making the switch to a meat-free lifestyle, it's good to get"
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7590619"
+        ],
+        "text": "Cardiovascular disease. Eating nuts and whole grains, while eliminating dairy products and meat, will improve your cardiovascular health. A British study indicates that a vegan diet reduces the risk for heart disease and Type 2 diabetes. Vegan diets go far in preventing heart attack and stroke."
+      },
+      "relevant_rank": null,
+      "reciprocal_rank": 0.0,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 14,
+      "qid": "995526",
+      "query": "where is the federal penitentiary in ind",
+      "model_answer": {
+        "doc_id": "7403688",
+        "score": 4.3732,
+        "text": "jail, prison, and penitentiary In British English, there is no clear difference between jail and prison, and the word penitentiary is not now used. He was arrested for drunkenness and spent a night in the city jail. He was sentenced to 40 years in a state/federal prison."
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7926561"
+        ],
+        "text": "United States Penitentiary, Terre Haute. The United States Penitentiary, Terre Haute (USP Terre Haute) is a high-security United States federal prison for male inmates in Terre Haute, Indiana. It is part of the Terre Haute Federal Correctional Complex (FCC Terre Haute) and is operated by the Federal"
+      },
+      "relevant_rank": 139,
+      "reciprocal_rank": 0.007194,
+      "is_top1_hit": false
+    },
+    {
+      "query_idx": 15,
+      "qid": "820267",
+      "query": "what is the endocrine system responsible for?",
+      "model_answer": {
+        "doc_id": "2315343",
+        "score": 8.7987,
+        "text": "An informative article on: What Are The Functions Of The Endocrine System. The chief function of the endocrine system is to release hormones directly into the blood to act as messengers that control and coordinate activities throughout the entire body. Each hormone controls at least one physiologica"
+      },
+      "correct_answer": {
+        "doc_ids": [
+          "7778866"
+        ],
+        "text": "- the primary responsibility of the endocrine system is to regulate the body's growth and development, control the function of various tissues, support pregnancy and other reproductive functions and regulates metabolism. - the endocrine organs secrete the hormones directly into the bloodstream. - th"
+      },
+      "relevant_rank": null,
+      "reciprocal_rank": 0.0,
+      "is_top1_hit": false
+    }
+  ]
+}

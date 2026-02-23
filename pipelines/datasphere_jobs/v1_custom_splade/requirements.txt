@@ -1,0 +1,5 @@
+ir-datasets
+pytrec-eval
+torch
+transformers
+tqdm
