@@ -13,7 +13,7 @@ cmd: >
     --output ${OUTPUT_MODEL} \
     --log ${OUTPUT_LOG} \
     --checkpoint-dir ${OUTPUT_CHECKPOINTS} \
-    --max-samples 30000 \
+    --max-samples 30000000 \
     --epochs 1 \
     --batch-size 32 \
     --grad-accum 4 \
