@@ -1,0 +1,43 @@
+# DataSphere Jobs config for SPLADEv2 Training (ir_datasets variant)
+# See: https://yandex.cloud/en/docs/datasphere/concepts/jobs
+# This variant downloads data via ir_datasets directly (no prepare_data.py needed)
+
+name: splade-v2-1-training-irdatasets
+desc: >
+  SPLADEv2 training on MS MARCO passage triples (via ir_datasets download).
+  Produces model.pt checkpoint for re-ranking evaluation.
+  Training log in JSONL format for debugging.
+
+cmd: >
+  python main.py \
+    --output ${OUTPUT_MODEL} \
+    --log ${OUTPUT_LOG} \
+    --checkpoint-dir ${OUTPUT_CHECKPOINTS} \
+    --max-samples 30000 \
+    --epochs 1 \
+    --batch-size 32 \
+    --grad-accum 4 \
+    --lr 2e-5 \
+    --warmup-steps 6000 \
+    --num-checkpoints 2 \
+    --fp16
+
+# No input files — data downloaded via ir_datasets at runtime
+
+# Output files
+outputs:
+  - model.pt: OUTPUT_MODEL
+  - training_log.jsonl: OUTPUT_LOG
+  - checkpoints: OUTPUT_CHECKPOINTS
+
+# Environment
+env:
+  python:
+    type: manual
+    version: "3.10"
+    requirements-file: requirements.txt
+
+# GPU instances (training requires GPU)
+cloud-instance-types:
+  - g2.1   # 1x A100 (preferred — faster training)
+  - g1.1   # 1x V100 (fallback)
